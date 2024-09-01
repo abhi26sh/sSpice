@@ -8687,6 +8687,25 @@ h1, h2, h3, h4, h5,
 .product-select {
   font-size: 18px; }
 
+
+.size-available h3 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #6e7e34;
+    font-weight: bold;
+}
+
+.size-available ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.size-available ul li {
+    font-size: 18px;
+    color: #6e7e35;
+}
+
 .bootstrap-select .bs-ok-default:after {
   color: #455441;
   font-size: 12px;
@@ -9984,4 +10003,22 @@ textarea.form-control {
   position: relative;
   height: 50px;
   width: auto;
+}
+
+.license-img {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.license-wrap {
+  background: none;
+  box-shadow: none; 
+  padding: 0; 
+}
+
+.carousel-testimony .item {
+  padding: 15px; 
 }
