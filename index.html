@@ -26,8 +26,8 @@
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
 						<p class="mb-0 phone pl-md-2">
-							<a  class="mr-2"><span class="fa fa-phone mr-1"></span> +91 7222003335</a> 
-							<a ><span class="fa fa-paper-plane mr-1"></span> infieldFood@gmail.com</a>
+							<a href="tel:+917222003335" class="mr-2"><span class="fa fa-phone mr-1"></span> +91 7222003335</a> 
+							<a href="mailto:infieldspices@gmail.com"><span class="fa fa-paper-plane mr-1"></span> infieldspices@gmail.com</a>
 						</p>
 					</div>
 					<!-- <div class="col-md-6 d-flex justify-content-md-end">
@@ -88,24 +88,15 @@
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
-	      <!-- <div class="collapse navbar-collapse" id="ftco-nav">
+	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a  class="nav-link">Home</a></li>
-	          <li class="nav-item"><a class="nav-link">About</a></li>
-			  <li class="nav-item"><a class="nav-link">Product</a></li>
-	          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="https://technext.github.io/product.html">Products</a>
-                <a class="dropdown-item" href="https://technext.github.io/product-single.html">Single Product</a>
-                <a class="dropdown-item" >Cart</a>
-                <a class="dropdown-item" href="https://technext.github.io/checkout.html">Checkout</a>
-              </div>
-            </li>
-	          <li class="nav-item"><a href="https://technext.github.io/blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="#products" class="nav-link">What We Offer</a></li>
+	          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+	          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 	        </ul>
-	      </div> -->
+	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
@@ -164,7 +155,7 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-no-pb">
+    <section id="about" class="ftco-section ftco-no-pb">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(asset/images/bg-7.jpg);">
@@ -281,7 +272,7 @@
 			</div>
 		</section>
 
-		<section class="ftco-section">
+		<section id="products" class="ftco-section">
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -670,7 +661,7 @@
 			</div>
 		</section>
   
-    <section class="ftco-section testimony-section img" style="background-image: url(asset/images/bg-8.avif);">
+    <section id="testimonials" class="ftco-section testimony-section img" style="background-image: url(asset/images/bg-8.avif);">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -761,7 +752,7 @@
 
 
 		
-    <section class="ftco-section">
+    <section id="contact" class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -809,36 +800,36 @@
 				<div class="col-md-8">
 					<div class="contact-wrap w-100 p-md-5 p-4">
 						<h3 class="mb-4">Contact Us</h3>
-						<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+						<form id="contactForm" name="contactForm" class="contactForm">
+							<div id="form-messages"></div>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<label class="label" for="name">Full Name</label>
-										<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+										<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+										<div class="invalid-feedback">Please enter your name.</div>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label class="label" for="email">Email Address</label>
-										<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+										<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+										<div class="invalid-feedback">Please enter a valid email address.</div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<label class="label" for="subject">Subject</label>
-										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+										<label class="label" for="message">Message</label>
+										<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
+										<div class="invalid-feedback">Please enter your message.</div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<label class="label" for="#">Message</label>
-										<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-										<input type="submit" value="Send Message" class="btn btn-primary">
-										<div class="submitting"></div>
+										<button type="submit" id="submitBtn" class="btn btn-primary">
+											<span id="submitText">Send Message</span>
+											<span id="submitSpinner" class="spinner-border spinner-border-sm ml-2" style="display: none;"></span>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -906,10 +897,10 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon fa fa-map marker"></span><span class="text">HS FOOD PRODUCTS G-1, 41, RIICO Industrial Area Parbatsar, Nagaur, Rajasthan</span></li>
-	                <li><a ><span class="icon fa fa-phone"></span><span class="text">+91 8003422321</span></a></li>
+	                <li><a href="tel:+918003422321"><span class="icon fa fa-phone"></span><span class="text">+91 8003422321</span></a></li>
 					<!-- <li><span class="icon fa fa-map marker"></span><span class="text">MARKETED BY HSMS FOOD PRODUCTS PVT LTD 174-B, Milap Nagar, Tonk Road Jaipur, Rajasthan, 302018</span></li> -->
-					<li><a ><span class="icon fa fa-phone"></span><span class="text">+91 7222003335</span></a></li>
-	                <li><a ><span class="icon fa fa-paper-plane pr-4"></span><span class="text">infieldspices@gmail.com</span></a></li>
+					<li><a href="tel:+917222003335"><span class="icon fa fa-phone"></span><span class="text">+91 7222003335</span></a></li>
+	                <li><a href="mailto:infieldspices@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">infieldspices@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -936,6 +927,146 @@
   <script src="asset/liquorstore/js/jquery.animateNumber.min.js"></script>
   <script src="asset/liquorstore/js/scrollax.min.js"></script>
   <script src="asset/liquorstore/js/main.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        const submitBtn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const submitSpinner = document.getElementById('submitSpinner');
+        const formMessages = document.getElementById('form-messages');
+
+        // Form validation
+        function validateForm() {
+          let isValid = true;
+          const requiredFields = ['name', 'email', 'message'];
+          
+          requiredFields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            if (field) {
+              const value = field.value.trim();
+              
+              if (!value) {
+                field.classList.add('is-invalid');
+                isValid = false;
+              } else {
+                field.classList.remove('is-invalid');
+                field.classList.add('is-valid');
+              }
+            }
+          });
+
+          // Email validation
+          const emailField = document.getElementById('email');
+          if (emailField) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailField.value && !emailRegex.test(emailField.value)) {
+              emailField.classList.add('is-invalid');
+              isValid = false;
+            }
+          }
+
+          return isValid;
+        }
+
+        // Show success message
+        function showSuccessMessage() {
+          formMessages.innerHTML = `
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <strong>Success!</strong> Your email client will open with a pre-filled message. Please send the email to complete your inquiry.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          `;
+          contactForm.reset();
+          // Remove validation classes
+          document.querySelectorAll('.form-control').forEach(field => {
+            field.classList.remove('is-valid', 'is-invalid');
+          });
+        }
+
+        // Show error message
+        function showErrorMessage(message) {
+          formMessages.innerHTML = `
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <strong>Error!</strong> ${message}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          `;
+        }
+
+        // Handle form submission
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          if (!validateForm()) {
+            showErrorMessage('Please fill in all required fields correctly.');
+            return;
+          }
+
+          // Get form data
+          const nameField = document.getElementById('name');
+          const emailField = document.getElementById('email');
+          const messageField = document.getElementById('message');
+          
+          if (!nameField || !emailField || !messageField) {
+            showErrorMessage('Form fields not found. Please refresh the page.');
+            return;
+          }
+          
+          const name = nameField.value.trim();
+          const email = emailField.value.trim();
+          const message = messageField.value.trim();
+
+          // Create email content
+          const emailSubject = `Enquiry`;
+          const emailBody = `Hey Infield,
+
+I'm ${name} and I have an enquiry.
+
+${message}
+
+My email: ${email}
+
+Thanks!`;
+
+          // Open email client
+          const mailtoLink = `mailto:infieldspices@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+          window.open(mailtoLink);
+          
+          // Reset form without showing success message
+          contactForm.reset();
+          document.querySelectorAll('.form-control').forEach(field => {
+            field.classList.remove('is-valid', 'is-invalid');
+          });
+        });
+
+        // Real-time validation
+        document.querySelectorAll('input, textarea').forEach(field => {
+          field.addEventListener('blur', function() {
+            if (this.hasAttribute('required') && !this.value.trim()) {
+              this.classList.add('is-invalid');
+              this.classList.remove('is-valid');
+            } else if (this.value.trim()) {
+              this.classList.remove('is-invalid');
+              this.classList.add('is-valid');
+            }
+          });
+
+          field.addEventListener('input', function() {
+            if (this.classList.contains('is-invalid') && this.value.trim()) {
+              this.classList.remove('is-invalid');
+              this.classList.add('is-valid');
+            }
+          });
+        });
+      }
+    });
+  </script>
     
   </body>
 </html>
